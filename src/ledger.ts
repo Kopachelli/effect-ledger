@@ -89,7 +89,7 @@ export function createLedger(options: LedgerOptions): Ledger {
       scope: record.scope,
       operationId: record.operationId,
       attemptId: record.attemptId,
-      idempotencyKey: `action-ledger:${record.scope}:${record.operationId}`,
+      idempotencyKey: `effect-ledger:${record.scope}:${record.operationId}`,
     };
   }
 

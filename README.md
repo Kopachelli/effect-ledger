@@ -1,13 +1,13 @@
-# action-ledger
+# effect-ledger
 
 Framework-independent ledger for **external action outcomes**. It answers the question every automation eventually hits:
 
 > *"Did this operation actually happen — and what is safe to do next?"*
 
-A timeout tells you what the caller observed, not what the provider did. `action-ledger` records each intended operation once, replays recorded outcomes instead of re-executing them, and surfaces uncertain execution as `unknown` rather than guessing.
+A timeout tells you what the caller observed, not what the provider did. `effect-ledger` records each intended operation once, replays recorded outcomes instead of re-executing them, and surfaces uncertain execution as `unknown` rather than guessing.
 
 ```ts
-import { createLedger, MemoryStore } from 'action-ledger';
+import { createLedger, MemoryStore } from 'effect-ledger';
 
 const ledger = createLedger({ store: new MemoryStore() });
 

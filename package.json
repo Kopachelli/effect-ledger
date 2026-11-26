@@ -1,5 +1,5 @@
 {
-  "name": "action-ledger",
+  "name": "effect-ledger",
   "version": "0.1.0",
   "description": "Framework-independent ledger for external action outcomes: deduplicate operations, survive lost responses, and reconcile uncertain execution.",
   "keywords": [
@@ -38,7 +38,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kopachelli/action-ledger.git"
+    "url": "git+https://github.com/Kopachelli/effect-ledger.git"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
