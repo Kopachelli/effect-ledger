@@ -72,6 +72,7 @@ interface ActionAdapter {
 
 - `MemoryStore` — in-process; tests and single-process apps.
 - `SqliteStore` — durable, via Node's built-in `node:sqlite` (Node ≥ 22.13). Pass `':memory:'` or a file path. On Node 22 it prints an experimental warning; pin your Node version.
+- `D1Store` — Cloudflare D1 (SQLite at the edge). Apply `D1_SCHEMA_SQL` once, then `new D1Store(env.DB)`. Uses a structural `D1DatabaseLike` interface — no `@cloudflare/workers-types` dependency needed.
 
 Implement `LedgerStore` for your own database — the contract is three methods (`get`, `insert`, `updateIf`), and `updateIf` must be an atomic conditional write.
 
