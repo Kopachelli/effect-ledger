@@ -46,6 +46,19 @@ See [docs/COMPARISON.md](docs/COMPARISON.md) for an honest feature-by-feature
 comparison against idemkit, steadykey, armorer, and mcp-tool-idempotency —
 including where effect-ledger is *not* the right tool.
 
+## Related packages
+
+Part of the Kopachelli reliability toolkit:
+
+- [one-flight](https://www.npmjs.com/package/one-flight) — in-flight async
+  dedupe for the cases that don't need durability
+- [verifiable-log](https://www.npmjs.com/package/verifiable-log) — hash-chained
+  audit trail for the records a ledger produces
+- [time-budget](https://www.npmjs.com/package/time-budget) — deadline
+  propagation for the calls inside your adapter
+- [httpsig-js](https://www.npmjs.com/package/httpsig-js) — RFC 9421 HTTP Message
+  Signatures for authenticating the callers
+
 ## Guarantees and limits
 
 **Guaranteed:**
