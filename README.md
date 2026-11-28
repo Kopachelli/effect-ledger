@@ -40,6 +40,12 @@ if (outcome.status === 'unknown') {
 | Provider exposes status lookup | `reconcile()` resolves `unknown`/`pending` records |
 | Provider offers neither | Record stays `unknown`; the decision stays with your policy |
 
+## How it compares
+
+See [docs/COMPARISON.md](docs/COMPARISON.md) for an honest feature-by-feature
+comparison against idemkit, steadykey, armorer, and mcp-tool-idempotency —
+including where effect-ledger is *not* the right tool.
+
 ## Guarantees and limits
 
 **Guaranteed:**
